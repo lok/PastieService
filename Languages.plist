@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>objective-c++</key>
+	<string>Objective-C/C++</string>
+	<key>c++</key>
+	<string>C/C++</string>
+	<key>python</key>
+	<string>Python</string>
+	<key>java</key>
+	<string>Java</string>
+	<key>actionscript</key>
+	<string>ActionScript</string>
+	<key>ruby</key>
+	<string>Ruby</string>
+	<key>ruby_on_rails</key>
+	<string>Ruby on Rails</string>
+	<key>diff</key>
+	<string>Diff</string>
+	<key>plain_text</key>
+	<string>Plain text</string>
+	<key>css</key>
+	<string>CSS</string>
+	<key>javascript</key>
+	<string>Javascript</string>
+	<key>html</key>
+	<string>HTML / XML</string>
+	<key>html_rails</key>
+	<string>HTML (ERB / Rails)</string>
+	<key>shell-unix-generic</key>
+	<string>Bash (shell)</string>
+	<key>sql</key>
+	<string>SQL</string>
+	<key>php</key>
+	<string>PHP</string>
+	<key>pascal</key>
+	<string>Pascal</string>
+	<key>perl</key>
+	<string>Perl</string>
+	<key>yaml</key>
+	<string>YAML</string>
+	<key>csharp</key>
+	<string>C#</string>
+	<key>go</key>
+	<string>Go</string>
+	<key>apache</key>
+	<string>Apache (config)</string>
+	<key>lua</key>
+	<string>Lua</string>
+	<key>io</key>
+	<string>Io</string>
+	<key>lisp</key>
+	<string>Lisp (common)</string>
+	<key>d</key>
+	<string>D</string>
+	<key>erlang</key>
+	<string>Erlang</string>
+	<key>fortran</key>
+	<string>Fortran</string>
+	<key>haskell</key>
+	<string>Haskell</string>
+	<key>literate_haskell</key>
+	<string>Literate Haskell</string>
+	<key>makefile</key>
+	<string>Makefile</string>
+	<key>scala</key>
+	<string>Scala</string>
+	<key>scheme</key>
+	<string>Scheme</string>
+	<key>smarty</key>
+	<string>Smarty</string>
+	<key>ini</key>
+	<string>INI</string>
+	<key>nu</key>
+	<string>Nu</string>
+	<key>tex</key>
+	<string>TeX</string>
+	<key>clojure</key>
+	<string>Clojure</string>
+</dict>
+</plist>
