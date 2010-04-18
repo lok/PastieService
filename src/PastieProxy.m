@@ -94,6 +94,15 @@
 }
 
 #pragma mark -
+#pragma mark Actions
+- (NSURL*)sendPasteContent
+{
+    return [self sendPasteWithString:[pasteContent string] 
+                          ofLanguage:[pasteLanguage code] 
+                        setResticted:pasteRestricted];
+}
+
+#pragma mark -
 #pragma mark Create a new paste
 - (NSURL*)sendPasteWithString:(NSString*)string 
                    ofLanguage:(NSString*)language 
@@ -119,24 +128,6 @@
     }
     
     return [response URL];
-}
-
-#pragma mark -
-#pragma mark Actions
-- (IBAction)sendPasteContent:(id)sender 
-{
-    [NSApp hide:self];
-    
-    NSURL *pastieURL = [self sendPasteWithString:[pasteContent string] 
-                                      ofLanguage:[pasteLanguage code] 
-                                    setResticted:pasteRestricted];
-
-    NSPasteboard *pasteboard = [NSPasteboard generalPasteboard];
-    [pasteboard clearContents];
-    [pasteboard setString:[pastieURL description] forType:(NSString*)kUTTypeURL];
-    [pasteboard setString:[pastieURL description] forType:(NSString*)kUTTypeUTF8PlainText];
-    
-    [NSApp terminate:self];
 }
 
 #pragma mark -

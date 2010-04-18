@@ -55,8 +55,7 @@
 
 - (id)init;
 
-- (IBAction)sendPasteContent:(id)sender;
-
+- (NSURL*)sendPasteContent;
 - (NSURL*)sendPasteWithString:(NSString*)string 
                    ofLanguage:(NSString*)language 
                  setResticted:(BOOL)restricted;

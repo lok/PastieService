@@ -46,4 +46,20 @@
     [NSApp setServicesProvider:pastie];
 }
 
+#pragma mark -
+#pragma mark Actions
+- (IBAction)sendPasteContent:(id)sender 
+{
+    [NSApp hide:self];
+    [window close];
+    
+    NSURL *pastieURL = [pastie sendPasteContent];
+    
+    NSPasteboard *pasteboard = [NSPasteboard generalPasteboard];
+    [pasteboard clearContents];
+    [pasteboard setString:[pastieURL description] forType:(NSString*)kUTTypeURL];
+    [pasteboard setString:[pastieURL description] forType:(NSString*)kUTTypeUTF8PlainText];
+    
+    [NSApp terminate:self];
+}
 @end

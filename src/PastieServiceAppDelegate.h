@@ -46,4 +46,6 @@
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet PastieProxy *pastie;
 
+- (IBAction)sendPasteContent:(id)sender;
+
 @end
