@@ -11,6 +11,7 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		E2D0DFAE117BB9530014DCBE /* pastie.icns in Resources */ = {isa = PBXBuildFile; fileRef = E2D0DFAD117BB9530014DCBE /* pastie.icns */; };
 		E2D9F954115BBD350007BFBE /* Languages.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2D9F953115BBD350007BFBE /* Languages.plist */; };
 		E2FACED2115FC4EB0016AD02 /* NSString+TotalPercentEscape.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FACECB115FC4EB0016AD02 /* NSString+TotalPercentEscape.m */; };
 		E2FACED3115FC4EB0016AD02 /* PastieLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FACECD115FC4EB0016AD02 /* PastieLanguage.m */; };
@@ -42,7 +43,8 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* PastieService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PastieService-Info.plist"; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* PastieService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PastieService.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107320486CEB800E47090 /* PastieService.service */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PastieService.service; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D0DFAD117BB9530014DCBE /* pastie.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = pastie.icns; sourceTree = "<group>"; };
 		E2D9F953115BBD350007BFBE /* Languages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Languages.plist; sourceTree = "<group>"; };
 		E2FACECA115FC4EB0016AD02 /* NSString+TotalPercentEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TotalPercentEscape.h"; sourceTree = "<group>"; };
 		E2FACECB115FC4EB0016AD02 /* NSString+TotalPercentEscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TotalPercentEscape.m"; sourceTree = "<group>"; };
@@ -88,7 +90,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* PastieService.app */,
+				8D1107320486CEB800E47090 /* PastieService.service */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +119,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E2D0DFAD117BB9530014DCBE /* pastie.icns */,
 				E2FAD0AB115FCA230016AD02 /* LICENSE */,
 				8D1107310486CEB800E47090 /* PastieService-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -170,7 +173,7 @@
 			name = PastieService;
 			productInstallPath = "$(HOME)/Applications";
 			productName = PastieService;
-			productReference = 8D1107320486CEB800E47090 /* PastieService.app */;
+			productReference = 8D1107320486CEB800E47090 /* PastieService.service */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -202,6 +205,7 @@
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				E2D9F954115BBD350007BFBE /* Languages.plist in Resources */,
 				E2FAD0AC115FCA230016AD02 /* LICENSE in Resources */,
+				E2D0DFAE117BB9530014DCBE /* pastie.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +261,7 @@
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = PastieService;
 				SDKROOT = macosx10.6;
+				WRAPPER_EXTENSION = service;
 			};
 			name = Debug;
 		};
@@ -273,6 +278,7 @@
 				INFOPLIST_FILE = "PastieService-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Services";
 				PRODUCT_NAME = PastieService;
+				WRAPPER_EXTENSION = service;
 			};
 			name = Release;
 		};
