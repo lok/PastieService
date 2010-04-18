@@ -17,6 +17,13 @@ Once build place PastieService.app either in /Applications or
   sudo /System/Library/CoreServices/pbs
 
 This will update the cache of service providers.
+Finally open up System Preferences go into Keyboard and choose the Keyboard
+Shortcuts tab. On the left side are the categories, choose Services. On the
+right is a list of all the services you can activate. Find "Make New Pastie" in
+it (it's probably at the end in the Development section) and activate it.
+
+You can assign it a keyboard shortcut by right clicking on right side of the
+list.
 
 LICENSE
 =======
