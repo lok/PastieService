@@ -38,12 +38,12 @@
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		256AC3F00F4B6AF500CF3369 /* PastieService_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastieService_Prefix.pch; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* Pastie_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pastie_Prefix.pch; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		8D1107310486CEB800E47090 /* PastieService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PastieService-Info.plist"; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* PastieService.service */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PastieService.service; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107310486CEB800E47090 /* Pastie-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pastie-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Pastie.service */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pastie.service; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D0DFAD117BB9530014DCBE /* pastie.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = pastie.icns; sourceTree = "<group>"; };
 		E2D9F953115BBD350007BFBE /* Languages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Languages.plist; sourceTree = "<group>"; };
 		E2FACECA115FC4EB0016AD02 /* NSString+TotalPercentEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TotalPercentEscape.h"; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* PastieService.service */,
+				8D1107320486CEB800E47090 /* Pastie.service */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,7 +110,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				256AC3F00F4B6AF500CF3369 /* PastieService_Prefix.pch */,
+				256AC3F00F4B6AF500CF3369 /* Pastie_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -121,7 +121,7 @@
 			children = (
 				E2D0DFAD117BB9530014DCBE /* pastie.icns */,
 				E2FAD0AB115FCA230016AD02 /* LICENSE */,
-				8D1107310486CEB800E47090 /* PastieService-Info.plist */,
+				8D1107310486CEB800E47090 /* Pastie-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
 				E2D9F953115BBD350007BFBE /* Languages.plist */,
@@ -173,7 +173,7 @@
 			name = PastieService;
 			productInstallPath = "$(HOME)/Applications";
 			productName = PastieService;
-			productReference = 8D1107320486CEB800E47090 /* PastieService.service */;
+			productReference = 8D1107320486CEB800E47090 /* Pastie.service */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -256,10 +256,10 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PastieService_Prefix.pch;
-				INFOPLIST_FILE = "PastieService-Info.plist";
+				GCC_PREFIX_HEADER = Pastie_Prefix.pch;
+				INFOPLIST_FILE = "Pastie-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = PastieService;
+				PRODUCT_NAME = Pastie;
 				SDKROOT = macosx10.6;
 				WRAPPER_EXTENSION = service;
 			};
@@ -274,10 +274,10 @@
 				DEPLOYMENT_POSTPROCESSING = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PastieService_Prefix.pch;
-				INFOPLIST_FILE = "PastieService-Info.plist";
+				GCC_PREFIX_HEADER = Pastie_Prefix.pch;
+				INFOPLIST_FILE = "Pastie-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Services";
-				PRODUCT_NAME = PastieService;
+				PRODUCT_NAME = Pastie;
 				WRAPPER_EXTENSION = service;
 			};
 			name = Release;
